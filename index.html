@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Video</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="container" id="home">
+		<h1 class="title">Featured Video</h1>
+		<div class="row">
+			<!-- feature card -->
+			<div class="col">
+				<div class="feature-img">
+					<img src="media/laptop.jpg" alt="" width="100%">
+					<img src="media/media-player.png" alt="" class="play-btn" onClick="playVideo('media/laptop.mp4')">
+				</div>
+				<p>Design</p>
+				<h2>Security isn't just a technology problem it's about design,too</h2>
+			</div>
+
+			<!-- small card container -->
+			<div class="small-col">
+				<!-- card-1 -->
+				<div class="small-card">
+					<div class="small-img">
+						<img src="media/swimming.jpg" alt="" width="100%">
+						<img src="media/media-player.png" alt="" class="small-play-btn"
+							onClick="playVideo('media/swimming.mp4')">
+					</div>
+					<p>Product Updates</p>
+					<h4>Traditional design won't save us in the COVID-19 are</h4>
+				</div>
+
+				<!-- card-2 -->
+				<div class="small-card">
+					<div class="small-img">
+						<img src="media/car.jpg" alt="" width="100%">
+						<img src="media/media-player.png" alt="" class="small-play-btn"
+							onClick="playVideo('media/car.mp4')">
+					</div>
+					<p>Product Updates</p>
+					<h4>New: Freehand TEmplates, built for the whole team</h4>
+				</div>
+
+				<!-- card-3 -->
+				<div class="small-card">
+					<div class="small-img">
+						<img src="media/nuture.jpg" alt="" width="100%">
+						<img src="media/media-player.png" alt="" class="small-play-btn"
+							onClick="playVideo('media/nuture.mp4')">
+					</div>
+					<p>Product Updates</p>
+					<h4>The 1 tool that helps remote teams collaborate better</h4>
+				</div>
+
+				<!-- card-4 -->
+				<div class="small-card">
+					<div class="small-img">
+						<img src="media/resort.jpg" alt="" width="100%">
+						<img src="media/media-player.png" alt="" class="small-play-btn"
+							onClick="playVideo('media/resort.mp4')">
+					</div>
+					<p>Product Updates</p>
+					<h4>A lifestyle you always being the focal point is innately unhealthy.</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- video section -->
+	<div class="video-player" id="video-player">
+		<video width="100%" controls autoplay id="myVideo">
+			<source src="media/laptop.mp4" type="video/mp4">
+		</video>
+		<img src="media/cancel.png" alt="" class="cancle-btn" onclick="stopVideo()">
+	</div>
+
+	<!-- javascript link -->
+	<script src="app.js"></script>
+</body>
+
+</html>
